@@ -1,3 +1,338 @@
-h1 {
-    font-size: 20rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto 0 auto;
+    background-color: black;
+    color: white;
 }
+
+h1 {
+    font-size: 92px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 200px;
+    position: static;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+h3 {
+    margin-left: 148px;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 120%;
+    position: static;
+    z-index: 99;
+}
+
+h5 {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-weight: 200;
+    text-shadow: 0 0 20px #fff, 0 0 20px rgb(164, 161, 255), 0 0 30px #e66b00, 0 0 40px #ff9822, 0 0 50px #ffb61a, 0 0 60px #ff9b18, 0 0 70px #ffad0a;
+
+}
+
+.header-img {
+    width: 100%;
+    position: relative;
+}
+
+.header-glow {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hglow1 {
+        animation-name: FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: .8s;
+        animation-direction: alternate;
+        
+}
+
+#hglow2 {
+    animation-name: FadeOutIn;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: .6s;
+    animation-direction: alternate;
+    
+}
+
+.grid-images {
+    display: grid;
+    margin: 80px auto 0 auto;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 0;
+}
+
+.spotlight-image {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.pricing {
+    position: absolute;
+    top: 28%;
+    left: 40%;
+    margin-right: 230px;
+}
+
+.pricing-grid {
+    margin: 0 auto 0 auto;
+    display: grid;
+    justify-content: space-between;
+    justify-items: left;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
+    padding: 1em 0 0 0;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.supporters {
+    margin: 0 auto 0 auto;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 3em 0 3em 0;
+}
+
+.supporters img {
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(222deg) brightness(105%) contrast(103%);
+}
+
+.first-item {
+    grid-column: 1;
+}
+
+.second-item {
+    grid-column: 2;
+    margin-top: 30px;
+}
+
+.third-item {
+    grid-column: 3;
+}
+
+.mainFLowers {
+    position: relative;
+    top: -300px;
+}
+
+#flowers1 {
+    position:relative;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+#flowers1glow {
+    position:absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+#flowers2 {
+    position:absolute;
+    width: 80%;
+    top:200px;
+    left:290px;
+}
+
+#flowers2glow {
+    position:absolute;
+    width: 80%;
+    top:200px;
+    left: 290px;
+}
+
+#flowers3 {
+    position:absolute;
+    width: 80%;
+    top:200px;
+    left:90px;
+}
+
+#flowers3glow {
+    position:absolute;
+    width: 80%;
+    top:200px;
+    left: 90px;
+}
+
+.mainFLowers {
+    z-index: 1;
+}
+  
+.mainFLowers img {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  @keyframes FadeInOut {
+    0% {
+    opacity:1;
+    }
+    100% {
+    opacity:0;
+    }
+  }
+
+  @keyframes FadeOutIn {
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+  }
+  
+  #flowers1glow {
+  animation-name: FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  }
+
+  #flowers2glow {
+    animation-name: FadeOutIn;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+#flowers3glow {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+.accordion {
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(80, 80, 80); 
+  }
+  
+  .panel {
+    width: 77.5%;
+    padding: 0 18px;
+    background-color: rgb(60, 60, 60);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0 auto 0 auto;
+  }
+
+
+  .accordion:after {
+    content: "+"; 
+    font-size: 30px;
+    rotate: 90;
+    float: right;
+    margin-left: 5px;
+    font-weight: 700;
+    padding-right: 2%;
+    line-height: 80%;
+  }
+  
+  .active:after {
+    content: "-"; 
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .faqs {
+    margin: -380px auto 0 auto;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+
+  .faqs button {
+    margin-left: 148px;
+    width: 80%;
+  }
+
+  .description {
+    padding: 0 120px 0 120px;
+    text-align: center;
+  }
+
+  .description h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 80px;
+  }
+
+  .description button {
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 8px 50px;
+    background-color: #ffffff;
+    border-style: none;
+    position: relative;
+    z-index: 100;
+    transition: ease-in-out;
+    transition-duration: .8s;
+  }
+
+  .description button:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px rgb(164, 161, 255), 0 0 20px #e66b00, 0 0 30px #ff9822, 0 0 30px #ffb61a, 0 0 30px #ff9b18, 0 0 60px #ffad0a;
+    color: #f19f57;
+    transition: ease-in-out;
+    transition-duration: .8s;
+  }
+
+  h2 span {
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px rgb(164, 161, 255), 0 0 30px #e66b00, 0 0 40px #ff9822, 0 0 50px #ffb61a, 0 0 60px #ff9b18;
+  }
+
+  .description p {
+    font-size: 30px;
+  }
