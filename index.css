@@ -126,13 +126,32 @@ h5 {
     letter-spacing: 1px;
 }
 
+.pricing-mobile {
+  display: none;
+  margin: 0 auto 0 auto;
+  justify-content: space-between;
+  justify-items: left;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0px;
+  padding: 1em 10px;
+  line-height: 30px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.col {
+  display: grid;
+  row-gap: 20px;
+}
+
 .supporters {
     margin: 0 auto 0 auto;
     display: grid;
     justify-content: space-evenly;
     justify-items: center;
     grid-template-columns: repeat(6, 1fr);
-    padding: 3em 0 3em 0;
+    column-gap: 10px;
+    padding: 3em 0px;
 }
 
 .supporters img {
@@ -263,6 +282,7 @@ h5 {
     outline: none;
     font-size: 20px;
     transition: 0.4s;
+    display: grid;
   }
   
   .active, .accordion:hover {
@@ -279,9 +299,12 @@ h5 {
     margin: 0 auto 0 auto;
   }
 
+  .question {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-  .accordion:after {
-    content: "+"; 
+  .symbol {
     font-size: 30px;
     rotate: 90;
     float: right;
@@ -289,12 +312,23 @@ h5 {
     font-weight: 700;
     padding-right: 2%;
     line-height: 80%;
+    grid-column: 2;
+    text-align: right;
+    grid-row: 1;
   }
-  
-  .active:after {
-    content: "-"; 
+
+  .symbol2 {
+    display: none;
     font-size: 30px;
+    rotate: 90;
+    float: right;
+    margin-left: 5px;
     font-weight: 700;
+    padding-right: 2%;
+    line-height: 80%;
+    grid-column: 2;
+    text-align: right;
+    grid-row: 1;
   }
 
   .faqs {
@@ -451,9 +485,210 @@ h5 {
 
   h2 span {
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgb(255, 244, 219), 0 0 8px rgb(164, 161, 255), 0 0 30px #e66b00, 0 0 40px #ff9822, 0 0 50px #ffb61a, 0 0 60px #ff9b18;
+    text-shadow: 0 0 5px rgb(249, 185, 36), 0 0 8px rgb(255, 236, 161), 0 0 20px #e68200, 0 0 30px #ff9822, 0 0 20px #ffb61a, 0 0 40px #ff9b18;
   }
 
   .description p {
     font-size: 30px;
+  }
+
+  @media only screen and (max-width: 1225px) {
+    .spotlight-image {
+      width: 90%;
+      height: 20vw;
+    }
+    .grid-images {
+      padding: 0 1em 0 1em;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 901px) {
+    .supporters {
+      margin: 0 auto 0 auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 1em;
+      padding: 3em 35px;
+      column-gap: 10px;
+    }
+    .supporters img {
+    height: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 569px) {
+    .header-img {
+      height: 75vh;
+    }
+
+    .header-glow {
+      height: 75vh;
+    }
+
+    .first-item {
+      grid-column: 1;
+    }
+  
+    .second-item {
+      grid-column: 1;
+      grid-row: 2;
+      margin-top: 0px;
+    }
+  
+    .third-item {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .spotlight-image {
+      width: 90%;
+      height: 20vh;
+    }
+
+    .description p {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .pricing-grid {
+      font-size: 16px;
+    }
+
+    .pricing {
+      top: 32%;
+      left: 30%;
+      margin: 0 35px 0 0;
+    }
+
+    .faqs {
+      margin: 100px auto 0 auto;
+      width: 100%;
+      padding-bottom: 70px;
+    }
+
+    .faqs button {
+      margin: 0 45px 0 45px;
+      width: 85%;
+      font-size: 18px;
+    }
+
+    .accordion {
+      display: grid;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    .panel {
+      width: 77.5%;
+      padding: 0 18px;
+      background-color: rgb(60, 60, 60);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin: 0 45px;
+    }
+
+    h3 {
+      margin: 0 45px 15px 45px;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    .description img {
+      display: none;
+    }
+
+    
+    .neon {
+      position: static;
+    }
+
+    .line{
+      position: static;
+      top: 130vh;
+    }
+  
+    
+    .line2{
+      position: static;
+      top: 20vh;
+    }
+
+    .grid-images {
+      margin: -160px auto 0px auto;
+      padding: 0px;
+    }
+
+    .description {
+      margin-top: 80px;
+    }
+
+    .description button {
+      font-size: 18px;
+      padding: 8px 30px;
+    }
+
+    .mainFLowers {
+      margin: 180px auto 50px auto;
+    }
+
+    .pricing {
+      margin: 0 auto 0 auto;
+      padding: 0px 55px;
+      left: auto;
+    }
+
+    #flowers2 {
+      position:absolute;
+      width: 80%;
+      top:200px;
+      left:80vw;
+  }
+  
+  #flowers2glow {
+      position:absolute;
+      width: 80%;
+      top:200px;
+      left: 290px;
+  }
+  
+  #flowers3 {
+      position:absolute;
+      width: 80%;
+      top:450px;
+      left:0px;
+  }
+  
+  #flowers3glow {
+      position:absolute;
+      width: 80%;
+      top:450px;
+      left: 0px;
+  }
+
+  .pricing-mobile {
+    display: grid;
+    column-gap: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 25px;
+    column-gap: 45px;
+  }
+
+  .col1 {
+    text-align: right;
+    justify-self: end;
+    font-weight: 800;
+  }
+
+  .pricing-grid {
+    display: none;
+  }
+
   }
