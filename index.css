@@ -566,7 +566,7 @@ h5 {
     }
 
     .faqs {
-      margin: 100px auto 0 auto;
+      margin: 90px auto 0 auto;
       width: 100%;
       padding-bottom: 70px;
     }
@@ -660,14 +660,14 @@ h5 {
   #flowers3 {
       position:absolute;
       width: 80%;
-      top:450px;
+      top:420px;
       left:0px;
   }
   
   #flowers3glow {
       position:absolute;
       width: 80%;
-      top:450px;
+      top:420px;
       left: 0px;
   }
 
@@ -679,6 +679,7 @@ h5 {
     grid-template-columns: repeat(2, auto);
     row-gap: 25px;
     column-gap: 45px;
+    line-height: 135%;
   }
 
   .col1 {
