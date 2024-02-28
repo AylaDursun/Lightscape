@@ -378,6 +378,7 @@ h5 {
     width: 130%;
     position: absolute;
     left: -15%;
+    top: 0%;
     z-index: -1;
   }
 
@@ -409,7 +410,7 @@ h5 {
     border-color: rgb(255, 255, 255);
     border-radius: 2em;
     height: 0;
-    width: 15vw;
+    width: 105vw;
     top: 0px;
     left: -5%;
     box-shadow: 0 0 .2rem rgb(255, 215, 154),
